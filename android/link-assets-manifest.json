@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts2/SFUIDisplay-Bold.ttf",
+      "sha1": "f1278a898670d2a92c066e14ce427b1789b44e16"
+    },
+    {
+      "path": "src/assets/fonts2/SFUIDisplay-Light.ttf",
+      "sha1": "db1be7039e1a092e600d8e4a6c5e3ec334e9783f"
+    },
+    {
+      "path": "src/assets/fonts2/SFUIDisplay-Regular.otf",
+      "sha1": "97d7866e3bf32d9131532d9428f6c2e20f276edb"
+    },
+    {
+      "path": "src/assets/fonts2/SFUIDisplay-Semibold.ttf",
+      "sha1": "0f4e0a3bce39a6c594bf75e74374948444faf198"
+    }
+  ]
+}

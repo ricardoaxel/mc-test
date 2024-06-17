@@ -1,26 +1,22 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import OnboardingDashboardScreen from './onboarding.dashboard.screen';
+import OnboardingDashboardScreen from './dashboard.screen';
 
 export type DashboardRoutes = {
-  DashboardOnboarding: undefined;
+  Dashboard: undefined;
 };
 
 const Stack = createStackNavigator<DashboardRoutes>();
 
 export const DashboardStack = () => {
   return (
-    <Stack.Navigator
-      initialRouteName="DashboardOnboarding"
-      screenOptions={{
-        headerTitle: 'Empty Stack',
-      }}>
+    <Stack.Navigator initialRouteName="Dashboard">
       <Stack.Screen
-        name="DashboardOnboarding"
+        name="Dashboard"
         component={OnboardingDashboardScreen}
         options={{
-          headerTitle: 'Onboarding Test',
+          headerShown: false,
         }}
       />
     </Stack.Navigator>
