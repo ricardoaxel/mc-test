@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
       height: 5,
     },
     shadowOpacity: 0.2,
-    shadowRadius: 6,
+    shadowRadius: 5,
   },
   subContiner: {
     justifyContent: 'center',

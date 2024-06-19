@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  GestureResponderEvent,
-  ImageSourcePropType,
-  Pressable,
-  View,
-} from 'react-native';
+import {ImageSourcePropType, TouchableOpacity, View} from 'react-native';
 import {DefaultTheme} from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -17,7 +12,7 @@ interface SelectionCardI {
   isSelected?: boolean;
   variantStyles: DefaultTheme;
   customStyles?: any;
-  onPress: ((event: GestureResponderEvent) => void) | null | undefined;
+  onPress: () => void;
 }
 
 export const SelectionCard = ({
@@ -27,7 +22,7 @@ export const SelectionCard = ({
   onPress,
 }: SelectionCardI) => {
   return (
-    <Pressable onPress={onPress}>
+    <TouchableOpacity onPress={onPress}>
       <GradientContainer
         variant={'secondary'}
         noBorder={!isSelected}
@@ -55,6 +50,6 @@ export const SelectionCard = ({
           />
         </View>
       </GradientContainer>
-    </Pressable>
+    </TouchableOpacity>
   );
 };

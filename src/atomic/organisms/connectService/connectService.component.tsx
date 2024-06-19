@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import {Pressable, Text, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import {useTheme} from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {Button, RoundedImage} from '@atomic/atoms';
 import {InputLabel} from '@atomic/molecules';
-import {IServiceProvider} from '@utils/constants';
+import {IServiceProvider} from '@utils/interfaces';
 
 import styles from './connectService.style';
 
@@ -30,7 +30,7 @@ interface IConnectService {
 
 export const ConnectService = ({
   onRequestClose,
-  actualSelection: {image, name, color, id},
+  actualSelection: {image, name, color},
   onConnectService,
 }: IConnectService) => {
   const theme = useTheme();
@@ -65,9 +65,9 @@ export const ConnectService = ({
     <View style={styles.container}>
       <View style={[styles.serviceColorIndicator, {backgroundColor: color}]} />
       <View style={styles.contentContainer}>
-        <Pressable style={styles.closeButton} onPress={onRequestClose}>
+        <TouchableOpacity style={styles.closeButton} onPress={onRequestClose}>
           <Icon name="close" size={22} />
-        </Pressable>
+        </TouchableOpacity>
         <RoundedImage source={image} size={80} />
         <Text style={[theme.texts.titles]}>Connect {name}</Text>
         <View style={styles.form}>

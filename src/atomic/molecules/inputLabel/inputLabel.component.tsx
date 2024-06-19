@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Pressable, Text, TextInput, View} from 'react-native';
+import {Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {DefaultTheme} from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -39,7 +39,7 @@ export const InputLabel = ({
           onChangeText={onChange}
         />
         {secureText && (
-          <Pressable onPress={toggleSecureText}>
+          <TouchableOpacity onPress={toggleSecureText}>
             {secureTextEntry ? (
               <Icon
                 name="eye-outline"
@@ -53,7 +53,7 @@ export const InputLabel = ({
                 size={24}
               />
             )}
-          </Pressable>
+          </TouchableOpacity>
         )}
       </View>
     </View>

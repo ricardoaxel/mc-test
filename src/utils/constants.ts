@@ -6,17 +6,7 @@ import {
   STARBUCKS_LOGO,
   UBER_LOGO,
 } from '@assets/images';
-
-export interface IServiceProvider {
-  id: ServiceProviderKeyType;
-  name: string;
-  image: any;
-  color: string;
-}
-
-interface IServiceProviders {
-  [key: string]: IServiceProvider;
-}
+import {IServiceProviders} from './interfaces';
 
 export const serviceProviders: IServiceProviders = {
   netflix: {
@@ -56,5 +46,3 @@ export const serviceProviders: IServiceProviders = {
     color: '#EC4698',
   },
 } as const;
-
-export type ServiceProviderKeyType = keyof typeof serviceProviders;

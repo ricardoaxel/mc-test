@@ -2,8 +2,9 @@ import React from 'react';
 import {StyleProp, View, ViewStyle} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import styles from './gradientContainer.styles';
 import {GradientColors} from '@utils/interfaces';
+
+import styles from './gradientContainer.styles';
 
 enum GradientContainerVariants {
   primary = 'primary',

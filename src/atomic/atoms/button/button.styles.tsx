@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   gradientExternalContainer: {width: '100%'},
+  iconMargin: {
+    marginTop: 10,
+  },
 });
 
 export default styles;

@@ -1,8 +1,9 @@
 import 'react-native-gesture-handler';
 import React, {FC} from 'react';
-import Navigation from './Navigation';
 import {ThemeProvider} from 'styled-components/native';
+
 import {CommonTheme} from '../atomic/theme';
+import Navigation from './Navigation';
 
 const App: FC = () => {
   return (

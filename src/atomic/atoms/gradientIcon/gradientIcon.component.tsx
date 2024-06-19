@@ -1,10 +1,10 @@
 import React, {ComponentType} from 'react';
-import {View} from 'react-native';
+import {StyleProp, View, ViewStyle} from 'react-native';
 import MaskedView from '@react-native-masked-view/masked-view';
 import LinearGradient from 'react-native-linear-gradient';
 import {IconProps} from 'react-native-vector-icons/Icon';
-
 import {GradientColors} from '@utils/interfaces';
+
 import {GradientContainer} from '../gradientContainer/gradientContainer.component';
 
 import styles from './gradientIcon.styles';
@@ -16,15 +16,16 @@ enum GradientIconVariants {
 type GradientIconVariantType = `${GradientIconVariants}`;
 
 interface IGradientIcon {
-  size: number;
-  padding: number;
-  border: number;
-  variant: GradientIconVariantType;
+  size?: number;
+  padding?: number;
+  border?: number;
+  variant?: GradientIconVariantType;
   Icon: ComponentType<IconProps>;
   name: string;
-  borderRadius: number;
-  gradientColors: GradientColors;
-  color: string;
+  borderRadius?: number;
+  gradientColors?: GradientColors;
+  color?: string;
+  customStyles?: StyleProp<ViewStyle>;
 }
 
 export const GradientIcon = ({
@@ -47,6 +48,7 @@ export const GradientIcon = ({
         gradientColors={gradientColors}
         variant={'primary'}
         borderRadius={borderRadius}
+        customExternalStyles={[{width: size, height: size}]}
         customInternalStyles={[
           {padding},
           styles.primaryGradientContainerInternal,
