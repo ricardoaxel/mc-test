@@ -114,18 +114,16 @@ Notes:
 
 - Fork this project and share the link of the repository once you finish the excersie.
 
-## Step 1: Start the Metro Server
+## Step 1: Install dependencies
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+First, you will need to install the project dependencies.
 
 ```bash
 # using npm
-npm start —legacy-peer-deps
+npm install —legacy-peer-deps
 ```
 
-## Step 3: Install IOS Dependencies
+## Step 2: Install IOS Dependencies
 
 - Delete Podfile.loc
 
@@ -135,6 +133,17 @@ npm start —legacy-peer-deps
 # using npm
 cd ios
 pod install
+```
+
+## Step 3: Start the Metro Server
+
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+
+To start Metro, run the following command from the _root_ of your React Native project:
+
+```bash
+# using npm
+npm start
 ```
 
 ## Step 4: Start your Application
