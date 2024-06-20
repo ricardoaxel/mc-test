@@ -84,6 +84,16 @@ const texts = {
     color: BrandColors.Primary,
     fontSize: 18,
   },
+  buttonCard: {
+    fontFamily: FontFamilys.Bold,
+    color: BrandColors.Background,
+    fontSize: 14,
+  },
+  buttonSecondaryCard: {
+    fontFamily: FontFamilys.Bold,
+    color: BrandColors.Primary,
+    fontSize: 14,
+  },
 };
 
 const buttons = {
@@ -115,6 +125,20 @@ const buttons = {
       gradientColors,
       button: {height: 46},
       text: {...texts.buttonSecondary, fontSize: 18},
+    },
+    primaryCard: {
+      type: 'gradient',
+      variant: 'primary',
+      gradientColors,
+      button: {height: 38},
+      text: texts.buttonCard,
+    },
+    secondaryCard: {
+      type: 'gradient',
+      variant: 'secondary',
+      gradientColors,
+      button: {height: 38},
+      text: texts.buttonSecondaryCard,
     },
   },
   alter: {

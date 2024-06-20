@@ -42,8 +42,8 @@ export const SelectionCard = ({
             onPress={onPress}
             variantStyles={
               isSelected
-                ? variantStyles.buttons.main.primary
-                : variantStyles.buttons.main.secondary
+                ? variantStyles.buttons.main.primaryCard
+                : variantStyles.buttons.main.secondaryCard
             }
             customStyles={[styles.button, isSelected && styles.selectedButton]}
             text={isSelected ? 'Connected' : 'Connect'}

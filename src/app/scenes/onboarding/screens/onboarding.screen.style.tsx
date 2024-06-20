@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
   },
   descriptionTitle: {
     textAlign: 'center',
+    paddingHorizontal: 20,
   },
 
   // Services Section
