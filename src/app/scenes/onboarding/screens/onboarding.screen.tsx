@@ -135,7 +135,7 @@ const OnboardingScreen: FC<ScreenProps> = ({navigation}) => {
           onAccept={goToDashboard}
           onExit={closeAllSetModal}
           Icon={Icon}
-          iconName={'card-bulleted-settings-outline'}
+          iconName={'checkbox-marked-circle-outline'}
         />
       </AlertModal>
     </>

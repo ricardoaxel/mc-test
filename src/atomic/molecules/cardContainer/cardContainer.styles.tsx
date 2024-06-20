@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   blockedContainer: {
     position: 'absolute',
     width: '100%',
-    backgroundColor: 'rgba(0,0,0,0.6)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
     borderRadius: 8,
     alignItems: 'center',
     height: '100%',

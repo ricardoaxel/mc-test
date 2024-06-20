@@ -11,7 +11,7 @@ export const generalOptions = (theme: DefaultTheme) => [
     id: 'resetPin',
     icon: (
       <GradientIcon
-        name="eye-off-outline"
+        name="card-bulleted-settings-outline"
         Icon={Icon}
         border={0}
         padding={0}
@@ -26,7 +26,7 @@ export const generalOptions = (theme: DefaultTheme) => [
     id: 'notifications',
     icon: (
       <GradientIcon
-        name="eye-off-outline"
+        name="bell-outline"
         Icon={Icon}
         border={0}
         padding={0}
@@ -40,7 +40,7 @@ export const generalOptions = (theme: DefaultTheme) => [
     id: 'requestCard',
     icon: (
       <GradientIcon
-        name="eye-off-outline"
+        name="card-bulleted-outline"
         Icon={Icon}
         border={0}
         padding={0}
